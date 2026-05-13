@@ -1,0 +1,7 @@
+{
+  "dropTableLoadoutId": "drop_table_loadout.example.stage_common.stage_01",
+  "dropTableIds": [
+    "drop_table.example.training_box",
+    "drop_table.lockpick"
+  ]
+}

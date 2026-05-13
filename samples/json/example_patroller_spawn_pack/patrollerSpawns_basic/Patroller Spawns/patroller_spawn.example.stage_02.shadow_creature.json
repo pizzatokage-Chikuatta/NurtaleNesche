@@ -1,0 +1,12 @@
+{
+  "id": "patroller_spawn.example.stage_02.shadow_creature",
+  "patrollerId": "patroller.example.shadow_creature.training",
+  "enabled": true,
+  "spawnRegionId": "replace.with.stage_02.spawn_region_guid",
+  "patrolRegionIds": [
+    "replace.with.stage_02.patrol_region_guid"
+  ],
+  "xOffsetFromRegionCenter": 0.0,
+  "yOffsetFromGround": 0.0,
+  "useSpawnRegionCheckpointPosition": true
+}

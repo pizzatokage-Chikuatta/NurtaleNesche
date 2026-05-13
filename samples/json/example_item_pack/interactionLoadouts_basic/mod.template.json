@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "interactionLoadouts",
+    "id":  "mod.example.example_item_pack.interactionLoadouts",
+    "name":  "Example Interaction Loadouts",
+    "author":  "YourName",
+    "description":  "Folder-backed interaction loadout example.",
+    "entry":  "Interaction Loadouts",
+    "overwriteExisting":  true
+}

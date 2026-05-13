@@ -1,0 +1,8 @@
+{
+  "combinationId": "item_combination.example.training_arrow_bundle",
+  "inputs": [
+    "item.example.training_arrow",
+    "item.example.training_arrow"
+  ],
+  "output": "item.wooden_arrow"
+}

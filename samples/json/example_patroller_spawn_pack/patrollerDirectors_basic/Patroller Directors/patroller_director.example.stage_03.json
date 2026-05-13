@@ -1,0 +1,24 @@
+{
+  "id": "patroller_director.example.stage_03",
+  "patrolRegionIds": [
+    "replace.with.stage_03.patrol_region_guid"
+  ],
+  "startActive": true,
+  "autoActivation": false,
+  "autoActivationDelay": 45.0,
+  "maxAliveFromThisSpawner": 2,
+  "maxAliveOnFloor": 5,
+  "fastReduceCoolEnemyCount": 2,
+  "spawnCooldown": 120.0,
+  "spawnJitterX": 2.5,
+  "allowDuplicatePatrollersInSameWave": true,
+  "spawnCountChoices": [
+    1
+  ],
+  "patrollers": [
+    {
+      "patrollerId": "patroller.example.shadow_creature.training",
+      "weight": 1
+    }
+  ]
+}

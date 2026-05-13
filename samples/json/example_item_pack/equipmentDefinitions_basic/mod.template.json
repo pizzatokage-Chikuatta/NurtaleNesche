@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "equipmentDefinitions",
+    "id":  "mod.example.example_item_pack.equipmentDefinitions",
+    "name":  "Example Equipment Definitions",
+    "author":  "YourName",
+    "description":  "Folder-backed equipment definition example.",
+    "entry":  "Equipment Definitions",
+    "overwriteExisting":  true
+}

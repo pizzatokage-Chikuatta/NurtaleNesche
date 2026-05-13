@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "itemBoxSpawns",
+    "id":  "mod.example.example_item_box_pack.itemBoxSpawns",
+    "name":  "Example Item Box Spawns",
+    "author":  "YourName",
+    "description":  "Folder-backed stage-initial item-box spawn example.",
+    "entry":  "Item Box Spawns",
+    "overwriteExisting":  true
+}

@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "itemCombinations",
+    "id":  "mod.example.example_item_pack.itemCombinations",
+    "name":  "Example Item Combinations",
+    "author":  "YourName",
+    "description":  "Folder-backed item combination example.",
+    "entry":  "Item Combinations",
+    "overwriteExisting":  true
+}

@@ -1,0 +1,10 @@
+﻿{
+    "id":  "chainpoint_spawn.mouthpiece_chain_on_wall.stage_03.001",
+    "checkpointUuid":  "dbed0297-61ef-4d26-b26f-c3d079e73c12",
+    "enabled":  true,
+    "regionId":  "70306fee-f680-4e17-92e2-e9d5ad8eef47",
+    "offsetX":  0,
+    "heightFromGround":  4.1,
+    "rotationY":  0,
+    "chainPointId":  "chainpoint.mouthpiece_chain_on_wall"
+}

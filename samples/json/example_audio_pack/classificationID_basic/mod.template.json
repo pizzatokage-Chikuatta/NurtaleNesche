@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "classificationID",
+    "id":  "mod.example.example_audio_pack.classificationID",
+    "name":  "Example Classification ID",
+    "author":  "YourName",
+    "description":  "Folder-backed clip classification example.",
+    "entry":  "Classification ID",
+    "overwriteExisting":  true
+}

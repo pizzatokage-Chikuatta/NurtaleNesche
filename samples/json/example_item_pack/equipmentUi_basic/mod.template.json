@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "equipmentUi",
+    "id":  "mod.example.example_item_pack.equipmentUi",
+    "name":  "Example Equipment UI",
+    "author":  "YourName",
+    "description":  "Folder-backed equipment UI metadata example.",
+    "entry":  "Equipment UI",
+    "overwriteExisting":  true
+}

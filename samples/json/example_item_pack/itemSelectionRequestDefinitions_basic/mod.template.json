@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "itemSelectionRequestDefinitions",
+    "id":  "mod.example.example_item_pack.itemSelectionRequestDefinitions",
+    "name":  "Example Item Selection Requests",
+    "author":  "YourName",
+    "description":  "Folder-backed item selection request definition example.",
+    "entry":  "Item Selection Requests",
+    "overwriteExisting":  true
+}

@@ -1,0 +1,18 @@
+{
+  "id": "item.potion.example.training_tonic",
+  "NameInAlphabet": "Training Tonic",
+  "showUpStage": 1,
+  "brokenChance": 0,
+  "itemSelectionRequestId": "item_selection_request.potion",
+  "builtInPrefabAddress": "Assets/Prefabs/Item/Item Prefab/Potion/Potion Base.prefab",
+  "assetBundleFileName": null,
+  "prefabAssetName": null,
+  "assemblyFileName": null,
+  "logicTypeName": null,
+  "spriteIds": [
+    { "key": "default", "spriteId": "sprite_item.potion_white" }
+  ],
+  "extras": {
+    "dropSFXId": "sfx.item.potion_drop"
+  }
+}

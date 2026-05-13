@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "bgmStageLoadouts",
+    "id":  "mod.example.example_audio_pack.bgmStageLoadouts",
+    "name":  "Example BGM Stage Loadouts",
+    "author":  "YourName",
+    "description":  "Folder-backed stage BGM loadout example.",
+    "entry":  "BGM Stage Loadouts",
+    "overwriteExisting":  true
+}

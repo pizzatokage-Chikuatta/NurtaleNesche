@@ -1,0 +1,25 @@
+﻿{
+  "id": "item_box_spawn.example.stage_01.001",
+  "enabled": true,
+  "boxPrefabId": "item_box_prefab.example_crate",
+  "spawnRegionId": "replace.with.stage_01.region_guid",
+  "xOffsetFromRegionCenter": 0.0,
+  "useSpawnRegionCheckpointPosition": true,
+  "yPosOffset": 0.0,
+  "dropYVelocity": 5.0,
+  "openSFXId": "sfx.wooden_box_open",
+  "uniqueDropTableIds": [
+    "drop_table.example.training_box"
+  ],
+  "fixedRandomSpawnItemIds": [
+    "item.biscuit",
+    "item.lockpick"
+  ],
+  "fixedRandomSpawnQuantityList": [
+    1,
+    1
+  ],
+  "spawnEquipmentIds": [
+    "equipment.example.training_dagger"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "equipmentId": "equipment.example.training_dagger",
+  "isTrinket": false,
+  "hudKeyIndex": 0,
+  "quickUseAction": "Parry",
+  "longPressAction": "Parry",
+  "escapeToolId": "escape_tool.dagger"
+}
