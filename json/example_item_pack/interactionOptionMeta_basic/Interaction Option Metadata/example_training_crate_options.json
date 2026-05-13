@@ -1,0 +1,12 @@
+[
+  {
+    "id": "interaction.example.training_crate.open",
+    "en": "Open crate",
+    "order": 10
+  },
+  {
+    "id": "interaction.example.training_crate.leave",
+    "en": "Leave it",
+    "order": 20
+  }
+]

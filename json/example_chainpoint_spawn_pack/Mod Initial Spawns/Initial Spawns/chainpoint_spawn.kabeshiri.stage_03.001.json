@@ -1,0 +1,10 @@
+﻿{
+    "id":  "chainpoint_spawn.kabeshiri.stage_03.001",
+    "checkpointUuid":  "6ca26215-38c1-461c-ab17-ee9640d4334c",
+    "enabled":  true,
+    "regionId":  "1c53e5c0-54b5-4850-8ef6-1731d444c483",
+    "offsetX":  -1.5,
+    "heightFromGround":  1.87,
+    "rotationY":  0,
+    "chainPointId":  "chainpoint.kabeshiri"
+}

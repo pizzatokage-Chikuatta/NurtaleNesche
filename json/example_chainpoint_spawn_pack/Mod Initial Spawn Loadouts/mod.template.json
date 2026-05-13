@@ -1,0 +1,6 @@
+﻿{
+  "experimentalApiVersion": "v1",
+  "type": "chainPointSpawnLoadouts",
+  "entry": "Initial Spawn Loadouts",
+  "overwriteExisting": true
+}

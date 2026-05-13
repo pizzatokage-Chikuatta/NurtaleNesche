@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "patrollerDirectors",
+    "id":  "mod.example.example_patroller_spawn_pack.patrollerDirectors",
+    "name":  "Example Patroller Directors",
+    "author":  "YourName",
+    "description":  "Folder-backed patroller director example.",
+    "entry":  "Patroller Directors",
+    "overwriteExisting":  true
+}

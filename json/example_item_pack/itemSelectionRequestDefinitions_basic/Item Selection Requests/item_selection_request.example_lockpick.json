@@ -1,0 +1,10 @@
+[
+  {
+    "id": "item_selection_request.example.lockpick",
+    "loadoutId": "profile.item_selection.lockpick",
+    "factoryId": "item_selection_factory.lockpick",
+    "allowedTokens": [
+      "bind_id"
+    ]
+  }
+]

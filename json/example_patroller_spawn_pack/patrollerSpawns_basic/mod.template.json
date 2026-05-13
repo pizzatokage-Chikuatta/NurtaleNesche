@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "patrollerSpawns",
+    "id":  "mod.example.example_patroller_spawn_pack.patrollerSpawns",
+    "name":  "Example Patroller Spawns",
+    "author":  "YourName",
+    "description":  "Folder-backed stage-initial patroller spawn example.",
+    "entry":  "Patroller Spawns",
+    "overwriteExisting":  true
+}

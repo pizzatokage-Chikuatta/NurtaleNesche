@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "itemDefinitions",
+    "id":  "mod.example.example_item_pack.itemDefinitions",
+    "name":  "Example Item Definitions",
+    "author":  "YourName",
+    "description":  "Folder-backed item definition example.",
+    "entry":  "Item Definitions",
+    "overwriteExisting":  true
+}

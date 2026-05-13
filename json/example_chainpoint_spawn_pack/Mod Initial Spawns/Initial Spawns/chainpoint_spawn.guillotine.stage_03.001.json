@@ -1,0 +1,10 @@
+﻿{
+    "id":  "chainpoint_spawn.guillotine.stage_03.001",
+    "checkpointUuid":  "bc0b4bec-07b3-43f1-b1d2-453f9430183c",
+    "enabled":  true,
+    "regionId":  "0920c195-58f1-40a5-90c4-a754b95c041c",
+    "offsetX":  0,
+    "heightFromGround":  3.65,
+    "rotationY":  0,
+    "chainPointId":  "chainpoint.guillotine"
+}

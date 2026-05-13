@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "itemNames",
+    "id":  "mod.example.example_item_pack.itemNames",
+    "name":  "Example Item Names",
+    "author":  "YourName",
+    "description":  "Folder-backed localized item naming example.",
+    "entry":  "Item Names",
+    "overwriteExisting":  true
+}

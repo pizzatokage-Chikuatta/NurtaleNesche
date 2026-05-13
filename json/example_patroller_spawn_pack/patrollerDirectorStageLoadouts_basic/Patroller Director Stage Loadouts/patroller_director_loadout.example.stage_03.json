@@ -1,0 +1,9 @@
+{
+  "id": "patroller_director_loadout.example.stage_03",
+  "assignments": [
+    {
+      "spawnPointId": "replace.with.stage_03.spawn_point_id",
+      "directorId": "patroller_director.example.stage_03"
+    }
+  ]
+}

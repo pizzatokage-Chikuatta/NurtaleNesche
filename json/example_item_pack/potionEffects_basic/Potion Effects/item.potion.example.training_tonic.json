@@ -1,0 +1,18 @@
+{
+  "potionId": "item.potion.example.training_tonic",
+  "onDrink": {
+    "consumeItem": true,
+    "actions": [
+      { "type": "Heal", "amount": 20 },
+      { "type": "RecoverStamina", "amount": 15 }
+    ],
+    "vfxId": "Potion_White"
+  },
+  "onHit": {
+    "stunTime": 0.4,
+    "actions": [
+      { "type": "Heal", "amount": 10 }
+    ],
+    "vfxId": "Potion_White"
+  }
+}

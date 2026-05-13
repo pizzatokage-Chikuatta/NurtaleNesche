@@ -1,0 +1,6 @@
+{
+  "id": "item_box_spawn_loadout.example.stage_01",
+  "itemBoxSpawnIds": [
+    "item_box_spawn.example.stage_01.001"
+  ]
+}

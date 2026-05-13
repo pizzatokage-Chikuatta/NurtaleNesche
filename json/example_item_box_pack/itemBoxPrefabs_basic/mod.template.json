@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "itemBoxPrefabs",
+    "id":  "mod.example.example_item_box_pack.itemBoxPrefabs",
+    "name":  "Example Item Box Prefabs",
+    "author":  "YourName",
+    "description":  "Folder-backed item-box prefab example.",
+    "entry":  "Item Box Prefabs",
+    "overwriteExisting":  true
+}
