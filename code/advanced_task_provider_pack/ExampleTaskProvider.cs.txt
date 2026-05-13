@@ -1,0 +1,24 @@
+using Newtonsoft.Json.Linq;
+using NurtaleNesche.Modding.Patrollers.Tasks;
+
+namespace ExampleMods.Tasks
+{
+    [TaskProviderId("task_provider.example.wait")]
+    public sealed class ExampleWaitTaskProvider : TaskSetCore
+    {
+        public override void ApplyConfig(JObject cfg)
+        {
+            // Optional: read custom provider config here.
+        }
+
+        public override Patroller.PatrollerTaskInfoContainer GetNewTask()
+        {
+            if (!IsConditionMetForPriority(TaskPriorities.MiscTaskLow)) return null;
+            if (controller == null || controller.baseIdleState == null) return null;
+
+            return new TaskSequenceBuilder()
+                .Then(controller.baseIdleState, new StateArgs_Idle(1.5f))
+                .Build(this, TaskPriorities.MiscTaskLow, "ExampleWait");
+        }
+    }
+}
