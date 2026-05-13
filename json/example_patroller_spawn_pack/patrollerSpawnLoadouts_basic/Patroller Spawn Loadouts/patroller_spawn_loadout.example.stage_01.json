@@ -1,9 +1,0 @@
-{
-  "patrollerSpawnLoadoutId": "patroller_spawn_loadout.example.stage_01",
-  "patrollerSpawnIds": [
-    "patroller_spawn.example.stage_01.shadow_creature"
-  ],
-  "commonPatrolRegionIds": [
-    "replace.with.common_patrol_region_guid"
-  ]
-}
