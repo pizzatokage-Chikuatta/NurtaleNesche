@@ -1,0 +1,41 @@
+{
+  "clips": [
+    {
+      "name": "Example_Orc_HScene_1_2Loop",
+      "clipId": "example.orc_hscene_1_2_loop",
+      "frameRate": 100.0,
+      "pixelsPerUnit": 54.0,
+      "loopTime": true,
+      "tracks": [
+        {
+          "trackId": "body",
+          "spriteFrames": [
+            {
+              "spriteName": "Orc_HScene_1_2Loop_1",
+              "time": 0.0,
+              "duration": 0.2
+            },
+            {
+              "spriteName": "Orc_HScene_1_2Loop_2",
+              "time": 0.2,
+              "duration": 0.2
+            }
+          ],
+          "transforms": {
+            "position": { "x": [], "y": [], "z": [] },
+            "rotation": { "x": [], "y": [], "z": [] },
+            "scale": { "x": [], "y": [], "z": [] },
+            "color": { "r": [], "g": [], "b": [], "a": [] }
+          }
+        }
+      ],
+      "transforms": {
+        "position": { "x": [], "y": [], "z": [] },
+        "rotation": { "x": [], "y": [], "z": [] },
+        "scale": { "x": [], "y": [], "z": [] },
+        "color": { "r": [], "g": [], "b": [], "a": [] }
+      },
+      "events": []
+    }
+  ]
+}

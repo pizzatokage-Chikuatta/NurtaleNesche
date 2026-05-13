@@ -1,0 +1,41 @@
+{
+  "clips": [
+    {
+      "name": "Example_Goblin_Idle_Override",
+      "clipId": "example.goblin_idle_override",
+      "frameRate": 100.0,
+      "pixelsPerUnit": 54.0,
+      "loopTime": true,
+      "tracks": [
+        {
+          "trackId": "body",
+          "spriteFrames": [
+            {
+              "spriteName": "Goblin_Idling_2",
+              "time": 0.0,
+              "duration": 0.25
+            },
+            {
+              "spriteName": "Goblin_Idling_1",
+              "time": 0.25,
+              "duration": 0.25
+            }
+          ],
+          "transforms": {
+            "position": { "x": [], "y": [], "z": [] },
+            "rotation": { "x": [], "y": [], "z": [] },
+            "scale": { "x": [], "y": [], "z": [] },
+            "color": { "r": [], "g": [], "b": [], "a": [] }
+          }
+        }
+      ],
+      "transforms": {
+        "position": { "x": [], "y": [], "z": [] },
+        "rotation": { "x": [], "y": [], "z": [] },
+        "scale": { "x": [], "y": [], "z": [] },
+        "color": { "r": [], "g": [], "b": [], "a": [] }
+      },
+      "events": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "priority": 100,
+  "overrides": {
+    "items": [
+      {
+        "clipSlot": "Goblin_Idling.main",
+        "clipId": "example.goblin_idle_override"
+      }
+    ]
+  }
+}

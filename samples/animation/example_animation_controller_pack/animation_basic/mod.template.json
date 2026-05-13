@@ -1,0 +1,11 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "animation",
+    "id":  "mod.example.example_animation_controller_pack.animation",
+    "name":  "Example Animations",
+    "author":  "YourName",
+    "description":  "Actor-targeted folder-backed animation example.",
+    "target":  "replace.with.actor_id",
+    "variant":  "",
+    "entry":  "Animations"
+}
