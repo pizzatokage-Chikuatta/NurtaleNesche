@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "mode": "advanced",
+  "id": "Orc_Shouter_AC",
+  "displayName": "Orc Shouter Controller Example",
+  "entryStateId": "Orc_Idle",
+  "common": {
+    "clips": {}
+  },
+  "stateMotionBindings": [
+    {
+      "stateId": "Orc_Idle",
+      "clips": {
+        "main": "orc.orc_idle"
+      },
+      "tuning": {},
+      "motionParameters": {}
+    },
+    {
+      "stateId": "Orc_Shout",
+      "clips": {
+        "main": "example.orc_shout"
+      },
+      "tuning": {},
+      "motionParameters": {}
+    }
+  ],
+  "parameters": [
+    {
+      "name": "shout",
+      "type": "Trigger",
+      "defaultBool": false,
+      "defaultFloat": 0.0,
+      "defaultInt": 0
+    }
+  ],
+  "layers": [
+    {
+      "name": "Base Layer",
+      "defaultWeight": 1.0,
+      "syncedLayerIndex": -1,
+      "iKPass": false,
+      "avatarMask": "",
+      "states": [
+        "Orc_Idle",
+        "Orc_Shout"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "id": "Orc_Idle",
+      "layer": "Base Layer",
+      "machinePath": "Base Layer",
+      "name": "Orc_Idle",
+      "fullPath": "Base Layer/Orc_Idle",
+      "motionId": "Orc_Idle",
+      "speed": 1.0,
+      "cycleOffset": 0.0,
+      "iKOnFeet": false,
+      "mirror": false,
+      "writeDefaultValues": true,
+      "motionType": "Clip",
+      "clipId": "orc.orc_idle",
+      "clipAssetPath": "",
+      "blendTree": null
+    },
+    {
+      "id": "Orc_Shout",
+      "layer": "Base Layer",
+      "machinePath": "Base Layer",
+      "name": "Orc_Shout",
+      "fullPath": "Base Layer/Orc_Shout",
+      "motionId": "Orc_Shout",
+      "speed": 1.0,
+      "cycleOffset": 0.0,
+      "iKOnFeet": false,
+      "mirror": false,
+      "writeDefaultValues": true,
+      "motionType": "Clip",
+      "clipId": "example.orc_shout",
+      "clipAssetPath": "",
+      "blendTree": null
+    }
+  ],
+  "transitions": [
+    {
+      "layer": "Base Layer",
+      "machinePath": "Base Layer",
+      "fromStateId": "AnyState",
+      "toStateId": "Orc_Shout",
+      "hasExitTime": false,
+      "exitTime": 0.0,
+      "duration": 0.0,
+      "offset": 0.0,
+      "mute": false,
+      "solo": false,
+      "canTransitionToSelf": false,
+      "conditions": [
+        {
+          "mode": "If",
+          "parameter": "shout",
+          "threshold": 0.0
+        }
+      ]
+    },
+    {
+      "layer": "Base Layer",
+      "machinePath": "Base Layer",
+      "fromStateId": "Orc_Shout",
+      "toStateId": "Orc_Idle",
+      "hasExitTime": true,
+      "exitTime": 0.0,
+      "duration": 0.0,
+      "offset": 0.0,
+      "mute": false,
+      "solo": false,
+      "canTransitionToSelf": false,
+      "conditions": []
+    }
+  ]
+}

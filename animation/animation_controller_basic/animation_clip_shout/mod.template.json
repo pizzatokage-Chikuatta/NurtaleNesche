@@ -1,0 +1,6 @@
+﻿{
+  "experimentalApiVersion": "v1",
+  "type": "animationClipOverride",
+  "target": "replace.with.animation_actor_id",
+  "entry": "."
+}

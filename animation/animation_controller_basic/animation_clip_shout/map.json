@@ -1,0 +1,11 @@
+{
+  "priority": 100,
+  "overrides": {
+    "items": [
+      {
+        "clipSlot": "Orc_Shout.main",
+        "clipId": "example.orc_shout"
+      }
+    ]
+  }
+}

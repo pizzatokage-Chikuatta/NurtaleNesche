@@ -1,0 +1,19 @@
+{
+  "animationClipId": "example.goblin_attack",
+  "events": [
+    {
+      "normalizedTime": 0.2,
+      "playbackAction": "play",
+      "sfxClassId": "sfx.example.ui",
+      "sfxClipId": "",
+      "volumeMultiplier": 1.0,
+      "pitchMultiplier": 1.0,
+      "soundStrength": 30.0,
+      "noiseLevel": 15.0,
+      "raiseSuspicion": false,
+      "soundSource": "Enemy",
+      "loop": false,
+      "alert": false
+    }
+  ]
+}

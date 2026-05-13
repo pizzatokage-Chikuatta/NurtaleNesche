@@ -1,0 +1,10 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "sprites",
+    "id":  "mod.example.example_animation_controller_pack.sprites",
+    "name":  "Example Sprites",
+    "author":  "YourName",
+    "description":  "Folder-backed runtime sprite example.",
+    "entry":  "Sprites",
+    "overwriteExisting":  true
+}

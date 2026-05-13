@@ -1,0 +1,11 @@
+﻿{
+  "experimentalApiVersion": "v1",
+    "type":  "animationClipOverride",
+    "id":  "mod.example.example_animation_controller_pack.animationClipOverride",
+    "name":  "Example Animation Clip Overrides",
+    "author":  "YourName",
+    "description":  "Actor-targeted animation clip override example.",
+    "target":  "replace.with.actor_id",
+    "variant":  "",
+    "entry":  "Animation Clip Overrides"
+}
