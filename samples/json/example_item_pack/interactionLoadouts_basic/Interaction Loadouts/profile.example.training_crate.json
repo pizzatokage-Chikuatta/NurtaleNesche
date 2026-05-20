@@ -1,8 +1,0 @@
-{
-  "id": "profile.example.training_crate",
-  "commands": [
-    "interaction.not_now",
-    "interaction.example.training_crate.open",
-    "interaction.example.training_crate.leave"
-  ]
-}

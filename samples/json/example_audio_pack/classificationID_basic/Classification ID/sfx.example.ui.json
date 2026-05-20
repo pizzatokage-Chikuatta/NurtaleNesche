@@ -1,9 +1,0 @@
-{
-  "id": "sfx.example.ui",
-  "clips": [
-    {
-      "clipId": "sfx.clip.example_ui_confirm",
-      "weight": 1
-    }
-  ]
-}
