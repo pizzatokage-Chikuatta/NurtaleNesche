@@ -1,0 +1,14 @@
+{
+    "name": "NurtaleNesche.Modding.Abstractions",
+    "rootNamespace": "NurtaleNesche.Modding",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
