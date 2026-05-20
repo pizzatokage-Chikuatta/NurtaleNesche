@@ -1,0 +1,18 @@
+using NurtaleNesche.Modding.Patrollers.Tasks;
+
+namespace ExampleMods.AdvancedRegistryOnly
+{
+    // Advanced/registry-only example.
+    // This is not a beginner-safe manifest surface in v1.
+    public sealed class ExampleChaseTaskOption : IChaseTaskOption
+    {
+        public Patroller.PatrollerTaskForChasingCaptive GetChaseTask(
+            Patroller.ChaseTaskSet owner,
+            Patroller.BaseController controller,
+            Patroller.PatrollerMemory memory,
+            Patroller.ChaseTaskRequest request)
+        {
+            return null;
+        }
+    }
+}

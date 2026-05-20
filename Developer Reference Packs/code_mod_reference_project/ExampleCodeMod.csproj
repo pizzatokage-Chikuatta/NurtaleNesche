@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>ExampleCodeMod</AssemblyName>
+    <RootNamespace>ExampleMods</RootNamespace>
+  </PropertyGroup>
+
+  <!--
+    In the public zip, this project is expected to live at:
+      Developer Reference Packs/code_mod_reference_project
+
+    The default DLL folder therefore points to:
+      ../../dlls
+
+    You can also build with:
+      dotnet build /p:NurtaleNescheDllDir="C:/Path/To/Nurtale Nesche_Data/Managed"
+  -->
+  <PropertyGroup>
+    <NurtaleNescheDllDir Condition="'$(NurtaleNescheDllDir)' == ''">..\..\dlls</NurtaleNescheDllDir>
+    <UnityDllDir Condition="'$(UnityDllDir)' == ''">$(NurtaleNescheDllDir)</UnityDllDir>
+    <NewtonsoftDllDir Condition="'$(NewtonsoftDllDir)' == ''">$(NurtaleNescheDllDir)</NewtonsoftDllDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="NurtaleNesche.Modding.Abstractions">
+      <HintPath>$(NurtaleNescheDllDir)\NurtaleNesche.Modding.Abstractions.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="NurtaleNesche.Runtime">
+      <HintPath>$(NurtaleNescheDllDir)\NurtaleNesche.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(UnityDllDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(NewtonsoftDllDir)\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

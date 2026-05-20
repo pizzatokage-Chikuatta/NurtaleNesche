@@ -1,0 +1,10 @@
+{
+  "experimentalApiVersion": "v1",
+  "factories": [
+    {
+      "id": "status_effect.example",
+      "profileId": "status_effect.example",
+      "type": "ExampleMods.StatusEffects.ExampleStatusEffect"
+    }
+  ]
+}
