@@ -1,1 +1,0 @@
-Put image files used by your custom animation here if your clip references mod-provided sprites. The JSON examples in this folder use existing sprite names as placeholders.
