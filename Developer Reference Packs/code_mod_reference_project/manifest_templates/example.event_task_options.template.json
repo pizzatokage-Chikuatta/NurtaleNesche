@@ -1,0 +1,17 @@
+{
+  "experimentalApiVersion": "v1",
+  "arrowOptions": [
+    {
+      "id": "event_task_option.arrow_hit.example_ignore",
+      "type": "ExampleMods.EventTaskOptions.ExampleArrowHitOption",
+      "overrideExisting": false
+    }
+  ],
+  "potionOptions": [
+    {
+      "id": "event_task_option.potion_hit.example_ignore",
+      "type": "ExampleMods.EventTaskOptions.ExamplePotionHitOption",
+      "overrideExisting": false
+    }
+  ]
+}

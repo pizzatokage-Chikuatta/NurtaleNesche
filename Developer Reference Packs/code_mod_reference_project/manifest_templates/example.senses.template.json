@@ -1,0 +1,10 @@
+{
+  "experimentalApiVersion": "v1",
+  "senses": [
+    {
+      "id": "sense.example.nearby_player",
+      "type": "ExampleMods.Senses.ExampleNearbyPlayerSense",
+      "overrideExisting": false
+    }
+  ]
+}

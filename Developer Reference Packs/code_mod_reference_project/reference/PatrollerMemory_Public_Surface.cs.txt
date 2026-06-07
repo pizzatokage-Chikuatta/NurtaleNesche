@@ -1,0 +1,46 @@
+// Reference only. Do not compile this file.
+// This is a compact public surface for PatrollerMemory methods commonly used by Sense code mods.
+// The real implementation lives in NurtaleNesche.Runtime.dll.
+
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Patroller
+{
+    public class PatrollerMemory : MonoBehaviour
+    {
+        // Captive observations. Used by ICaptiveDetector implementations.
+        public virtual void StageCaptiveObservation(string sourceId, ICaptive captive, int priority) { }
+        public virtual void StageCaptiveObservation(string sourceId, CaptiveInfoOnOthers info) { }
+        public virtual void StageForgetCaptiveObservation(string sourceId, ICaptive captive) { }
+        public virtual void StageForgetCaptivesBySource(string sourceId) { }
+        public virtual bool HasCaptiveObservation(string sourceId, ICaptive captive) { return false; }
+        public virtual List<CaptiveInfoOnOthers> GetCaptiveObservations(string sourceId) { return null; }
+        public virtual void CopyCaptiveObservationsTo(string sourceId, List<CaptiveInfoOnOthers> target, bool clone = true, bool clearTarget = true) { }
+
+        // Suspicion checkpoint observations. Used by ISuspicionCheckpointDetector implementations.
+        public virtual void StageSuspicionCheckpointObservation(string sourceId, Checkpoint checkpoint, int priority) { }
+        public virtual void StageForgetSuspicionCheckpointsBySource(string sourceId) { }
+        public virtual Dictionary<Checkpoint, int> GetSuspicionCheckpointObservations(string sourceId) { return null; }
+        public virtual void CopySuspicionCheckpointObservationsTo(string sourceId, Dictionary<Checkpoint, int> target, bool clearTarget = true) { }
+
+        // Chainpoint observations. Used by IChainpointDetector implementations.
+        public virtual void StageNearChainpointObservation(string sourceId, Chainpoint chainpoint, int priority) { }
+        public virtual void StageForgetNearChainpointObservation(string sourceId, Chainpoint chainpoint) { }
+        public virtual void StageForgetNearChainpointsBySource(string sourceId) { }
+        public virtual Dictionary<Chainpoint, int> GetNearChainpointObservations(string sourceId) { return null; }
+        public virtual void CopyNearChainpointObservationsTo(string sourceId, Dictionary<Chainpoint, int> target, bool clearTarget = true) { }
+
+        // Item observations. Used by IItemDetector implementations.
+        public virtual void StageNearItemObservation(string sourceId, IItem item) { }
+        public virtual void StageForgetNearItemObservation(string sourceId, IItem item) { }
+        public virtual void StageForgetNearItemsBySource(string sourceId) { }
+        public virtual List<IItem> GetNearItemObservations(string sourceId) { return null; }
+
+        // Patroller observations. Used by IPatrollerDetector implementations.
+        public virtual void StageNearPatrollerObservation(string sourceId, BaseController patroller) { }
+        public virtual void StageForgetNearPatrollerObservation(string sourceId, BaseController patroller) { }
+        public virtual void StageForgetNearPatrollersBySource(string sourceId) { }
+        public virtual List<BaseController> GetNearPatrollerObservations(string sourceId) { return null; }
+    }
+}

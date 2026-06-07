@@ -1,0 +1,10 @@
+{
+  "experimentalApiVersion": "v1",
+  "taskOptions": [
+    {
+      "id": "task_option.captive_treating.example_noop",
+      "type": "ExampleMods.CaptiveTreating.ExampleCaptiveTreatingOption",
+      "overrideExisting": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "experimentalApiVersion": "v1",
+  "factories": [
+    {
+      "id": "item_selection_factory.example",
+      "type": "ExampleMods.ItemSelection.ExampleItemSelectionRequestFactory"
+    }
+  ]
+}

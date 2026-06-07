@@ -1,0 +1,16 @@
+using NurtaleNesche.Modding.Patrollers.Tasks;
+
+namespace ExampleMods.AdvancedRegistryOnly
+{
+    // Advanced/registry-only example.
+    // This is not a beginner-safe manifest surface in v1.
+    public sealed class ExampleSoloActionTaskOption : ISoloActionTaskOption
+    {
+        public Patroller.PatrollerTaskForSoloAction GetSoloActionTask(
+            Patroller.SoloActionTaskSet owner,
+            Patroller.BaseController controller)
+        {
+            return null;
+        }
+    }
+}
