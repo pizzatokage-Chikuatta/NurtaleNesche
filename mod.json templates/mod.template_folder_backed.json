@@ -1,0 +1,6 @@
+{
+  "experimentalApiVersion": "v1",
+  "type": "itemBoxPrefabs",
+  "entry": "Item Boxes",
+  "overwriteExisting": true
+}

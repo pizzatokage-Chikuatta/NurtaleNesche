@@ -1,0 +1,7 @@
+{
+  "experimentalApiVersion": "v1",
+  "type": "animatorController",
+  "target": "Orc_AC Edit",
+  "variant": "",
+  "entry": "AnimationController"
+}
