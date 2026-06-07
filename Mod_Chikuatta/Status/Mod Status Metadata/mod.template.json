@@ -1,0 +1,6 @@
+{
+  "experimentalApiVersion": "v1",
+  "type": "statusMetadata",
+  "entry": "Status Metadata",
+  "overwriteExisting": true
+}

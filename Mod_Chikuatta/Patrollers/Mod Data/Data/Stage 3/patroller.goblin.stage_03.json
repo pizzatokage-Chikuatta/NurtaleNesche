@@ -1,0 +1,490 @@
+{
+    "id": "patroller.goblin.stage_03",
+    "NameInAlphabet": "Sample Goblin_Singer Mod",
+    "builtInPrefabAddress": "Assets/Prefabs/Patroller/Stage 3/Goblin_Stage3.prefab",
+    "statusProfileId": "profile_status_effect.patroller.enemy_default",
+    "actionRuleProfileId": "profile_action_rule.patroller.enemy_default",
+    "dropTableProfileId": "drop_table.goblin.stage_03",
+    "shadowProfileId": "shadow_profile.goblin",
+    "animationSetId": "Goblin_AC Edit",
+    "showUpStage": 3,
+    "positions": {
+        "yPosOffset": 0.1
+    },
+    "flags": {
+        "isCloseDoorByDefault": true,
+        "canCheckTrap": true
+    },
+    "stats": {
+        "maxHp": 150,
+        "healthCap": 500,
+        "maxStamina": 50,
+        "staminaCap": 500,
+        "staminaRestoreAmount": 0.5,
+        "defaultInteractIntervalSeconds": 0.65,
+        "walkSpeed": 3,
+        "sprintSpeed": 10,
+        "sexualHeatIncreasePerSecond": 1
+    },
+    "inventories": {
+        "maxItemSpeciesHoldable": 8,
+        "restraintItemCountOnSpawn": 10
+    },
+    "combat": {
+        "binding": {
+            "stunTimeOnMeleeAttack": 1.3,
+            "bindingPower": 0,
+            "bindDictOnPlayerHit": [],
+            "autoChooseBindIdsByBindingPower": true
+        },
+        "parry": {
+            "highThreshold": 70,
+            "midThreshold": 40,
+            "highStunTime": 6.5,
+            "midStunTime": 5,
+            "lowStunTime": 1.3,
+            "knockbackX": 0.8
+        },
+        "meleeAttackSound": {
+            "id": "sfx.orc_hit",
+            "strength": 70,
+            "alert": false,
+            "source": "Environment",
+            "volumeMultiplier": 0.8,
+            "pitchMultiplier": 1,
+            "raiseSuspicion": true
+        }
+    },
+    "senses": {
+        "providers": [
+            {
+                "id": "sense.item_detector",
+                "enabled": true,
+                "config": {
+                    "sightDelayTime": 1,
+                    "detectDistance": 7
+                }
+            },
+            {
+                "id": "sense.opened_door_detector",
+                "enabled": true,
+                "config": {
+                    "seekDelayTimeDefault": 0.6
+                }
+            },
+            {
+                "id": "sense.captive_detector_by_sight",
+                "enabled": true,
+                "config": {
+                    "sightDistance": 9,
+                    "sightDelayTime": 0.4
+                }
+            },
+            {
+                "id": "sense.captive_detector_by_scent",
+                "enabled": true,
+                "config": {
+                    "scentReactThreshold": 80
+                }
+            },
+            {
+                "id": "sense.suspicion_checkpoint_detector",
+                "enabled": true,
+                "config": {
+                    "suspicionThreshold": 50,
+                    "thresholdMultOnSameRegion": 0.6,
+                    "suspicionDiminishDegree": 10,
+                    "noiseDiminishDegree": 7
+                }
+            },
+            {
+                "id": "sense.obedient_captive_detector",
+                "enabled": true,
+                "config": {
+                    "seekDelayDefault": 0.25
+                }
+            },
+            {
+                "id": "sense.chain_point_detector",
+                "enabled": true,
+                "config": {
+                    "seekDistance": 20
+                }
+            },
+            {
+                "id": "sense.manual",
+                "enabled": true
+            }
+        ]
+    },
+    "tasks": {
+        "providers": [
+            {
+                "id": "task_set.chase",
+                "enabled": true,
+                "config": {
+                    "priority": "MiscTaskVeryHigh",
+                    "restraintsToLeave": [
+                        "status_effect.chain_leash",
+                        "status_effect.bandit_sack",
+                        "status_effect.rope_bondage_hang"
+                    ],
+                    "taskTags": {
+                        "default": "Chase",
+                        "foundCaptive": "Chase Found"
+                    },
+                    "options": [
+                        {
+                            "id": "task_option.chase.attack",
+                            "enabled": true,
+                            "config": {
+                                "priority": 10,
+                                "attackDistance": 2.25,
+                                "playSound": true,
+                                "restraintId": "status_effect.chain_leash"
+                            }
+                        },
+                        {
+                            "id": "task_option.chase.arrest",
+                            "enabled": true,
+                            "config": {
+                                "priority": 1,
+                                "restraintId": "status_effect.chain_leash"
+                            }
+                        }
+                    ],
+                    "providerCooldownMedian": 0.2
+                }
+            },
+            {
+                "id": "task_set.ability.goblin",
+                "enabled": true,
+                "config": {
+                    "priority": "MiscTaskExtremelyHigh",
+                    "options": [
+                        {
+                            "id": "task_option.ability.goblin.shout",
+                            "enabled": true,
+                            "config": {
+                                "priority": 1,
+                                "taskTags": {
+                                    "default": "Goblin Shout"
+                                },
+                                "play": {
+                                    "requestId": "goblin.shout",
+                                    "triggerName": "shout",
+                                    "playingStateName": "Goblin_Shout",
+                                    "maxDurationSeconds": 3
+                                },
+                                "cooldownChoices": [
+                                    {
+                                        "seconds": 1,
+                                        "weight": 1
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "task_option.ability.goblin.hunting_net",
+                            "enabled": false,
+                            "config": {
+                                "priority": 1,
+                                "huntingNetDisabledOnSpawn": true,
+                                "isHavingNet": true,
+                                "taskTags": {
+                                    "default": "Goblin Throw Net"
+                                },
+                                "swing": {
+                                    "requestId": "goblin.hunting_net.swing",
+                                    "triggerName": "prepareNet",
+                                    "playingStateName": "Goblin_Rope_Delay",
+                                    "maxDurationSeconds": 2
+                                },
+                                "throw": {
+                                    "requestId": "goblin.hunting_net.throw",
+                                    "triggerName": "throwNet",
+                                    "playingStateName": "Goblin_Rope_Throw",
+                                    "maxDurationSeconds": 2
+                                },
+                                "cooldownChoices": [
+                                    {
+                                        "seconds": 12,
+                                        "weight": 1
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "task_set.collect_captives",
+                "enabled": true,
+                "config": {
+                    "priority": "CollectSlavesOnField",
+                    "taskTags": {
+                        "default": "CollectCaptive"
+                    },
+                    "options": [
+                        {
+                            "id": "task_option.collect_captives.collect_same_region",
+                            "enabled": true,
+                            "config": {
+                                "priority": 10,
+                                "restraintId": "status_effect.chain_leash",
+                                "idleSeconds": 1
+                            }
+                        },
+                        {
+                            "id": "task_option.collect_captives.go_to_memory",
+                            "enabled": true,
+                            "config": {
+                                "priority": 1
+                            }
+                        }
+                    ],
+                    "providerCooldownMedian": 0.5
+                }
+            },
+            {
+                "id": "task_set.solo_action",
+                "enabled": true,
+                "config": {
+                    "priority": "Patrol",
+                    "taskTags": {
+                        "patrol": "Patrol",
+                        "grabCaptive": "Patrol GrabACaptive"
+                    },
+                    "options": [
+                        {
+                            "id": "task_option.solo_action.grab_captive",
+                            "enabled": true,
+                            "config": {
+                                "priority": 5,
+                                "minimumHeatDegree": "High",
+                                "taskPriority": "GoForEnjoyCaptivesOnTrap",
+                                "idleBeforeSeconds": 1,
+                                "cooldownChoices": [
+                                    {
+                                        "seconds": 0.5,
+                                        "weight": 9
+                                    },
+                                    {
+                                        "seconds": 25,
+                                        "weight": 1
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "task_option.solo_action.patrol",
+                            "enabled": true,
+                            "config": {
+                                "priority": 1,
+                                "idleBeforeSecondsMin": 1.5,
+                                "idleBeforeSecondsMax": 2,
+                                "idleAfterSecondsMin": 0.3,
+                                "idleAfterSecondsMax": 0.6
+                            }
+                        }
+                    ],
+                    "providerCooldownMedian": 0.5
+                }
+            },
+            {
+                "id": "task.suspicion",
+                "enabled": true,
+                "config": {
+                    "priority": "Suspicion",
+                    "restraintsToLeave": [
+                        "status_effect.chain_leash",
+                        "status_effect.bandit_sack",
+                        "status_effect.rope_bondage_hang"
+                    ],
+                    "taskTags": {
+                        "default": "Suspicion"
+                    },
+                    "providerCooldownMedian": 0.4
+                }
+            },
+            {
+                "id": "task.investigate_passed_chaseable_captive",
+                "enabled": true,
+                "config": {
+                    "priority": "Suspicion",
+                    "restraintsToLeave": [
+                        "status_effect.chain_leash",
+                        "status_effect.bandit_sack",
+                        "status_effect.rope_bondage_hang"
+                    ],
+                    "taskTags": {
+                        "PassedChaseableCaptive": "Suspicion PassedChaseableCaptive"
+                    },
+                    "providerCooldownMedian": 0.4
+                }
+            },
+            {
+                "id": "task.h_able_type_chainpoint_use",
+                "enabled": true,
+                "config": {
+                    "priority": "GoForEnjoyCaptivesOnTrap",
+                    "taskTags": {
+                        "default": "UseChainPoint EnjoyCaptive"
+                    },
+                    "providerCooldownMedian": 40
+                }
+            },
+            {
+                "id": "task_set.handling_captives",
+                "enabled": true,
+                "config": {
+                    "priority": "HandleCaptives",
+                    "taskTags": {
+                        "prefix": "HandlingCaptive"
+                    },
+                    "providerCooldownMedian": 3,
+                    "options": [
+                        {
+                            "id": "task_option.milk_girl",
+                            "enabled": true,
+                            "config": {
+                                "priority": 5
+                            }
+                        },
+                        {
+                            "id": "task_option.full_body_bondage_and_leave",
+                            "enabled": true,
+                            "config": {
+                                "priority": 3,
+                                "restraintId": "status_effect.full_body_bondage"
+                            }
+                        },
+                        {
+                            "id": "task_option.captive_to_chainpoint",
+                            "enabled": true,
+                            "config": {
+                                "priority": 3,
+                                "captiveGirlPreservables": [
+                                    "chainpoint.kabeshiri",
+                                    "chainpoint.kabeshiri_front",
+                                    "chainpoint.milk_machine",
+                                    "chainpoint.kabe_manguri",
+                                    "chainpoint.cuff_chain_on_wall"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "task_option.captive_to_h",
+                            "enabled": false,
+                            "config": {
+                                "priority": 3,
+                                "hIndex": 0
+                            }
+                        },
+                        {
+                            "id": "task_option.captive_to_special_h",
+                            "enabled": false,
+                            "config": {
+                                "priority": 3
+                            }
+                        },
+                        {
+                            "id": "task_option.h_and_fade",
+                            "enabled": false,
+                            "config": {
+                                "priority": 3,
+                                "hIndex": 0
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "task.restraint_item_loot",
+                "enabled": true,
+                "config": {
+                    "priority": "MiscTaskLow_Medium2",
+                    "idleTime": 0.4,
+                    "taskTags": {
+                        "prefix": "Loot"
+                    },
+                    "providerCooldownMedian": 15
+                }
+            },
+            {
+                "id": "task.breast_milk_potion_loot",
+                "enabled": true,
+                "config": {
+                    "priority": "MiscTaskLow_Medium2",
+                    "idleTime": 0.5,
+                    "itemsToLoot": [
+                        "item.potion.breast_milk"
+                    ],
+                    "taskTags": {
+                        "prefix": "Loot"
+                    },
+                    "providerCooldownMedian": 3
+                }
+            },
+            {
+                "id": "task.restraint_item_use",
+                "enabled": true,
+                "config": {
+                    "priority": "MiscTaskLow_Medium1",
+                    "idleTime": 0.5,
+                    "taskTags": {
+                        "default": "UseRestraintItem PunishCaptive"
+                    },
+                    "providerCooldownMedian": 0.9
+                }
+            },
+            {
+                "id": "event_task_set.arrow_hit",
+                "enabled": true,
+                "config": {
+                    "priority": "TakeDamage",
+                    "options": [
+                        {
+                            "id": "event_task_option.arrow_hit.general",
+                            "enabled": true,
+                            "config": {
+                                "priority": 0,
+                                "stun": 0.65,
+                                "criticalStunMultiplier": 1.5,
+                                "knockback": 0,
+                                "applyAngryStatus": true,
+                                "playAngrySound": true,
+                                "pushHitEffect": true,
+                                "speechClass": "Hit",
+                                "speechDuration": 1.5,
+                                "forceSpeechDisplay": true,
+                                "speechEligibleArrowIds": [
+                                    "item.wooden_arrow",
+                                    "item.silver_arrow"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "event_task_set.potion_hit",
+                "enabled": true,
+                "config": {
+                    "priority": "TakeDamage",
+                    "options": [
+                        {
+                            "id": "event_task_option.potion_hit.general",
+                            "enabled": true,
+                            "config": {
+                                "priority": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "extras": {},
+    "speechProfileId": "patroller.goblin"
+}

@@ -1,0 +1,6 @@
+{
+  "experimentalApiVersion": "v1",
+  "type": "itemBoxSpawns",
+  "entry": "Stage Initial Spawns",
+  "overwriteExisting": true
+}

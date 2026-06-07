@@ -1,0 +1,15 @@
+{
+  "id": "drop_table.item_box.stage_01.0",
+  "guaranteedItem": [ "item.biscuit", "item.lockpick" ],
+  "guaranteedEquipment": [],
+  "groups": [
+    {
+      "rolls": 2,
+      "entries": [
+        { "itemId": null, "weight": 1 },
+        { "itemId": "item.biscuit", "weight": 1 },
+        { "itemId": "item.lockpick", "weight": 1 }
+      ]
+    }
+  ]
+}

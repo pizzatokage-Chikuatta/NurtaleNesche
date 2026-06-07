@@ -1,0 +1,25 @@
+﻿{
+  "id": "item_box_spawn.stage_01.000.itembox",
+  "enabled": true,
+  "boxPrefabId": "item_box_prefab.stage_1.itembox_crate_variant",
+  "spawnRegionId": "e1e71a6c-1d3e-40bb-aea7-744d028e7d80",
+  "xOffsetFromRegionCenter": 4,
+  "useSpawnRegionCheckpointPosition": false,
+  "yPosOffset": -0.8,
+  "dropYVelocity": 5.0,
+  "dontRespawn": false,
+  "hasRandomSpawn": true,
+  "dontCurseItem": true,
+  "dontBrokeItem": true,
+  "curseAll": false,
+  "dontDropStageCommonDrops": false,
+  "isLockedAtStart": false,
+  "isNeedHammer": false,
+  "openSFXId": "sfx.item.box_open",
+  "uniqueDropTableIds": [
+    "drop_table.item_box.stage_01.0"
+  ],
+  "fixedRandomSpawnItemIds": [],
+  "fixedRandomSpawnQuantityList": [],
+  "spawnEquipmentIds": []
+}

@@ -1,0 +1,6 @@
+{
+  "experimentalApiVersion": "v1",
+  "type": "dropTables",
+  "entry": "Drop Tables",
+  "overwriteExisting": true
+}

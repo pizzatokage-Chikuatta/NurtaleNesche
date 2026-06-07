@@ -1,0 +1,15 @@
+{
+  "id": "item_box_spawn_loadout.stage_01",
+  "itemBoxSpawnIds": [
+    "item_box_spawn.stage_01.000.itembox",
+    "item_box_spawn.stage_01.001.itembox",
+    "item_box_spawn.stage_01.002.itembox_1",
+    "item_box_spawn.stage_01.003.itembox_2",
+    "item_box_spawn.stage_01.004.itembox_rope",
+    "item_box_spawn.stage_01.005.itembox_3",
+    "item_box_spawn.stage_01.006.itembox_4",
+    "item_box_spawn.stage_01.007.itembox_6",
+    "item_box_spawn.stage_01.008.itembox_7",
+    "item_box_spawn.stage_01.009.level_key_box"
+  ]
+}

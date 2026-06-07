@@ -1,0 +1,11 @@
+{
+  "id": "patroller_spawn.mod_shadow_creature.stage_06.001",
+  "patrollerId": "patroller.smoke_shadow_creature.stage_06",
+  "enabled": true,
+  "spawnRegionId": "c6fd4475-7e16-4fa8-83e9-ee3971662983",
+  "patrolRegionIds": [
+    "c6fd4475-7e16-4fa8-83e9-ee3971662983",
+    "a0318c57-68ba-46e0-90da-14e586475f96"
+  ],
+  "useSpawnRegionCheckpointPosition": true
+}

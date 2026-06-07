@@ -1,0 +1,40 @@
+﻿{
+  "id": "chainpoint.smoke_milk_machine",
+  "statusId": "status_effect.breast_milk_potion_machine",
+  "typeEnum": "Able_To_Play_With",
+  "accessScope": "Public",
+  "isNeedLockPickToEscape": false,
+  "runtimeSpawnable": true,
+  "stateAnimatorBindings": [
+    {
+      "chainpointStateId": "empty",
+      "mainAnimatorId": "body",
+      "entryMode": "play",
+      "entryStateName": "New State",
+      "monitorStateNames": [
+        "New State"
+      ]
+    },
+    {
+      "chainpointStateId": "captured_idle",
+      "mainAnimatorId": "body",
+      "entryMode": "play",
+      "entryStateName": "Idle",
+      "monitorStateNames": [
+        "Idle"
+      ]
+    },
+    {
+      "chainpointStateId": "enemy_use",
+      "mainAnimatorId": "body",
+      "entryMode": "play",
+      "entryStateName": "Milking",
+      "monitorStateNames": [
+        "Milking"
+      ]
+    }
+  ],
+  "interactionLoadout": "profile.milk_machine",
+  "assetBundleFileName": "test milk potion machine",
+  "prefabAssetPathInsideBundle": "Assets/Prefabs/Tests For Asset Bundle/Milk Potion Machine.prefab"
+}

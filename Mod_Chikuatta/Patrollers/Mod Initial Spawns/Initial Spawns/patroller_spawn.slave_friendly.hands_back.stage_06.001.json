@@ -1,0 +1,18 @@
+{
+  "id": "patroller_spawn.slave_friendly.hands_back.stage_06.001",
+  "patrollerId": "patroller.slave_friendly.hands_back",
+  "enabled": true,
+  "spawnRegionId": "0294cdd3-1dba-4ef8-b24a-fc7a5add47d0",
+  "patrolRegionIds": [
+    "4e270969-c8a4-4ade-8d50-83c82409e62d",
+    "ebe3ea2f-d945-441a-99a0-0c75a9d2a22d",
+    "2733123e-699d-4649-b181-0f2270ff7d26",
+    "30a2574a-0e78-42e1-aca0-08675cfcef01",
+    "316d1038-1b5b-4629-9b98-c9f8416019d8",
+    "8d56bac9-7264-4793-9dde-9c615104485c",
+    "a0c07ce9-8dc5-46b6-970a-b56633c3feaf",
+    "a7ebfaa6-5334-42f5-ac01-a08492da69af"
+  ],
+  "useSpawnRegionCheckpointPosition": false,
+  "xOffsetFromRegionCenter": 8.5
+}

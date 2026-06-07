@@ -1,0 +1,6 @@
+{
+  "experimentalApiVersion": "v1",
+  "type": "itemBoxSpawnLoadouts",
+  "entry": "Stage Initial Spawn Loadouts",
+  "overwriteExisting": true
+}

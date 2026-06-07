@@ -1,0 +1,27 @@
+﻿{
+  "patrollerSpawnLoadoutId": "patroller_spawn_loadout.stage_06",
+  "patrollerSpawnIds": [
+    // "patroller_spawn.slave_enemy.yoke.stage_06.001",
+    // "patroller_spawn.bandit.stage_06",
+    // "patroller_spawn.goblin.stage_06",
+    // "patroller_spawn.slave_friendly.hands_back.stage_06.001",
+    // "patroller_spawn.slave_friendly.hands_back.stage_06.002",
+    // "patroller_spawn.slave_friendly.hands_front.stage_06.001",
+    // "patroller_spawn.slave_friendly.hands_front.stage_06.002"
+    "patroller_spawn.mod_shadow_creature.stage_06.001"
+  ],
+  "commonPatrolRegionIds": [
+    "4e270969-c8a4-4ade-8d50-83c82409e62d",
+    "26e660b8-aad7-48ed-86f1-0a3619040799",
+    "429adbdd-4877-45b8-a5bc-0c83e6c87e54",
+    "a7ebfaa6-5334-42f5-ac01-a08492da69af",
+    "fc715c14-a8b9-4e6a-873f-b6271f56d7e8",
+    "618881ed-8b67-48ca-8e7f-6a2e576b969f",
+    "3685dc40-cb72-4ac5-8f0e-2099a5579442",
+    "8d56bac9-7264-4793-9dde-9c615104485c",
+    "a6ce69ff-a2c3-4798-b4ce-a579ac8ffd81",
+    "348e37b9-48d0-4878-9d38-a8a34c96705e",
+    "30a2574a-0e78-42e1-aca0-08675cfcef01"
+  ],
+  "commonPatrolRegionExpansions": []
+}

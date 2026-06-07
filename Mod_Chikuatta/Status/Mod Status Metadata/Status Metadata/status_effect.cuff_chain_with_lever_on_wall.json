@@ -1,0 +1,48 @@
+{
+    "id": "status_effect.cuff_chain_with_lever_on_wall",
+    "uiIconSpriteId": "sprite.ui.cuff_chain_with_lever",
+    "isCureable": false,
+    "isIncludeInCursePool": false,
+    "stageAvailableFrom": 1,
+    "efficacy": [
+        "efficacy.cannot_save_game",
+        "efficacy.cannot_move",
+        "efficacy.cannot_run",
+        "efficacy.cannot_reload_crossbow",
+        "efficacy.cannot_interact_objects_by_input",
+        "efficacy.cannot_shoot_crossbow",
+        "efficacy.cannot_use_hands",
+        "efficacy.cannot_use_scroll",
+        "efficacy.cannot_loot",
+        "efficacy.cannot_teleport",
+        "efficacy.cannot_remain_scent",
+        "efficacy.cannot_sleep",
+        "efficacy.cannot_masturbate",
+        "efficacy.cannot_raise_suspicious_sound",
+        "efficacy.cannot_drain_health_and_stamina",
+        "efficacy.cannot_confuse",
+        "efficacy.cannot_start_in_game_h_animation",
+        "efficacy.not_free",
+        "efficacy.cannot_reduce_damage_shock_by_input",
+        "efficacy.cannot_flinch",
+        "efficacy.blind",
+        "efficacy.cannot_pass_passage_by_velocity",
+        "efficacy.no_hit_box",
+        "efficacy.cannot_drop_item",
+        "efficacy.on_trap",
+        
+        "efficacy.limited_stamina"
+    ],
+    "blockedFrom": [
+        "status_effect.chain_leash",
+        "efficacy.cannot_use_hands"
+    ],
+    "forceDeactivates": [
+        "status_effect.chain_leash"
+    ],
+    "escapeTools": [
+        "escape_tool.lockpick"
+    ],
+    "type": "physical",
+    "lockLevel": 20
+}
