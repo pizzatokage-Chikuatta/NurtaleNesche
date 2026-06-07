@@ -1,9 +1,0 @@
-{
-  "experimentalApiVersion": "v1",
-  "providers": [
-    {
-      "id": "task_provider.example.wait",
-      "type": "ExampleMods.Tasks.ExampleWaitTaskProvider"
-    }
-  ]
-}
