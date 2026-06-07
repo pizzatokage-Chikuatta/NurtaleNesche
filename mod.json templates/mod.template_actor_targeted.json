@@ -1,7 +1,0 @@
-{
-  "experimentalApiVersion": "v1",
-  "type": "animatorController",
-  "target": "patroller.goblin",
-  "variant": "",
-  "entry": "AnimationController"
-}
