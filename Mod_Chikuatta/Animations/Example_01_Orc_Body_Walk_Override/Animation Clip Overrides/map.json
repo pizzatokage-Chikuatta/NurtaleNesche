@@ -1,0 +1,11 @@
+{
+  "priority": 100,
+  "overrides": {
+    "items": [
+      {
+        "clipSlot": "Orc_WalkRun.walk",
+        "clipId": "mod.chikuatta.example.orc_walk_body"
+      }
+    ]
+  }
+}

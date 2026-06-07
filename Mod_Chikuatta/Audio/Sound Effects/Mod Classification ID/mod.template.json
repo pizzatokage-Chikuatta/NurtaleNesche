@@ -1,0 +1,6 @@
+{
+  "experimentalApiVersion": "v1",
+  "type": "classificationID",
+  "entry": "Classification ID",
+  "overwriteExisting": true
+}

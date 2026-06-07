@@ -1,0 +1,55 @@
+{
+  "clips": [
+    {
+      "name": "Example 05: Nesche Armbinder Eyemask Patch",
+      "clipId": "nesche.actions.armbinder.nesche_armbinder_idle_e",
+      "tracks": [
+        {
+          "trackId": "eyemask",
+          "spriteFrames": [
+            {
+              "spriteName": "ExampleNescheArmbinderEyemask_00",
+              "time": 0,
+              "duration": 0.24
+            },
+            {
+              "spriteName": "ExampleNescheArmbinderEyemask_01",
+              "time": 0.24,
+              "duration": 1.1
+            },
+            {
+              "spriteName": "ExampleNescheArmbinderEyemask_02",
+              "time": 1.34,
+              "duration": 0.24000001
+            },
+            {
+              "spriteName": "ExampleNescheArmbinderEyemask_03",
+              "time": 1.58,
+              "duration": 1.69999993
+            },
+            {
+              "spriteName": "ExampleNescheArmbinderEyemask_04",
+              "time": 3.28,
+              "duration": 0.24000001
+            },
+            {
+              "spriteName": "ExampleNescheArmbinderEyemask_05",
+              "time": 3.52,
+              "duration": 1.0999999
+            },
+            {
+              "spriteName": "ExampleNescheArmbinderEyemask_06",
+              "time": 4.62,
+              "duration": 0.240000248
+            },
+            {
+              "spriteName": "ExampleNescheArmbinderEyemask_07",
+              "time": 4.86,
+              "duration": 0.01
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

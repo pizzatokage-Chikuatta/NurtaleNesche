@@ -1,0 +1,11 @@
+﻿{
+    "id":  "chainpoint_spawn.smoke_milk_machine.stage_06.001",
+    "checkpointUuid":  "b0cfc6bb-46c5-4998-8181-80c34f36aeca",
+    "enabled":  true,
+    "regionId":  "844a27db-6446-48e3-9063-3e03724ede3d",
+    "offsetX":  10,
+    "heightFromGround":  2.5,
+    "rotationY":  0,
+    "chainPointId":  "chainpoint.smoke_milk_machine"
+}
+

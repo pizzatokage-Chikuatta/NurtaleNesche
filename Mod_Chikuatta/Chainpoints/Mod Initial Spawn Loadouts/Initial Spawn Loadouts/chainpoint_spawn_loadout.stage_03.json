@@ -1,0 +1,12 @@
+﻿{
+    "chainPointSpawnLoadoutId":  "chainpoint_spawn_loadout.stage_03",
+    "chainPointSpawnIds":  [
+                               "chainpoint_spawn.cuff_chain_on_wall.stage_03.001",
+                               "chainpoint_spawn.guillotine.stage_03.001",
+                               "chainpoint_spawn.kabe_manguri.stage_03.001",
+                               "chainpoint_spawn.kabeshiri.stage_03.001",
+                               "chainpoint_spawn.kabeshiri_front.stage_03.001",
+                               "chainpoint_spawn.milk_machine.stage_03.001",
+                               "chainpoint_spawn.mouthpiece_chain_on_wall.stage_03.001"
+                           ]
+}

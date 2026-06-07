@@ -1,0 +1,6 @@
+﻿{
+  "experimentalApiVersion": "v1",
+  "type": "chainPointSpawns",
+  "entry": "Initial Spawns",
+  "overwriteExisting": true
+}

@@ -1,0 +1,63 @@
+{
+  "clips": [
+    {
+      "name": "Example Orc Walk Body",
+      "clipId": "mod.chikuatta.example.orc_walk_body",
+      "frameRate": 100,
+      "pixelsPerUnit": 54,
+      "loopTime": true,
+      "tracks": [
+        {
+          "trackId": "body",
+          "spriteFrames": [
+            {
+              "spriteName": "ExampleOrcWalkBody_00",
+              "time": 0,
+              "duration": 0.2
+            },
+            {
+              "spriteName": "ExampleOrcWalkBody_01",
+              "time": 0.2,
+              "duration": 0.2
+            },
+            {
+              "spriteName": "ExampleOrcWalkBody_02",
+              "time": 0.4,
+              "duration": 0.200000018
+            },
+            {
+              "spriteName": "ExampleOrcWalkBody_03",
+              "time": 0.6,
+              "duration": 0.199999988
+            },
+            {
+              "spriteName": "ExampleOrcWalkBody_04",
+              "time": 0.8,
+              "duration": 0.199999988
+            },
+            {
+              "spriteName": "ExampleOrcWalkBody_05",
+              "time": 1,
+              "duration": 0.200000048
+            },
+            {
+              "spriteName": "ExampleOrcWalkBody_06",
+              "time": 1.2,
+              "duration": 0.199999928
+            },
+            {
+              "spriteName": "ExampleOrcWalkBody_07",
+              "time": 1.4,
+              "duration": 0.200000048
+            },
+            {
+              "spriteName": "ExampleOrcWalkBody_08",
+              "time": 1.6,
+              "duration": 0.01
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

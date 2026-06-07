@@ -1,0 +1,8 @@
+{
+  "experimentalApiVersion": "v1",
+  "type": "animation",
+  "target": "Nesche",
+  "variant": "",
+  "entry": "Animations",
+  "mergeMode": "patch"
+}
